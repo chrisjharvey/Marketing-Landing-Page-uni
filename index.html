@@ -1,268 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+		<title>Front End React Developer: Chris Harvey</title>
+	</head>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-	<title>Front End React Developer: Chris Harvey</title>
-</head>
-
-<body>
-	<main>
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<a class="navbar-brand ml-5 text-white" href="#">Chris Harvey</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			  <ul class="navbar-nav ml-auto mr-5">
-				<li class="nav-item active">
-				  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#">About</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#">Services</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="#">Porfolio</a>
-				</li>
-				
-			  </ul>
-			</div>
-		  </nav>
-
-		<div class="wrapper">
-			
-			<div class="showcase-text">
-				<div class=" animate__animated animate__slideInLeft showcase-slide">
-					<h1 class=" showcase-title">React Front End Developer</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti?</p>
-					<a href="#portfolio" class="btn btn-lg btn-success ">Portfolio</a>
-					<button class="btn btn-lg btn-primary text-white ml-3" data-toggle="modal"
-						data-target="#exampleModal">Contact</button>
-				</div>
-				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-					aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title text-dark" id="exampleModalLabel">Lets Work Together</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body text-dark">
-								<h3 class="text-center mb-3">Contact Me</h3>
-								<form class="needs-validation" novalidate>
-									<div class="form-group">
-										<input type="text" name="name" placeholder="Name..." class="form-control" required>
-											<div class="invalid-feedback">Please enter a valid name</div>
-									</div>
-
-									<div class="form-group">
-
-										<input type="email" name="email" placeholder="Email..." class="form-control"
-											required>
-											<div class="invalid-feedback">Please enter a valid email address.</div>
-									</div>
-
-									<div class="form-group">
-
-										<input type="text" name="subject" placeholder="Subject..." class="form-control"
-											required>
-											<div class="invalid-feedback">Please enter a valid subject</div>
-									</div>
-
-									<div class="form-group">
-
-										<textarea type="text" name="message" placeholder="Message..."
-											class=" form-control" required></textarea>
-											<div class="invalid-feedback">Please enter a valid message</div>
-
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary"
-											data-dismiss="modal">Close</button>
-										<button type="submit" class="btn btn-primary">Submit</button>
-									</div>
-								</form>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="main-img animate__animated animate__bounce">
-				<img src="img/ecommerce.png" height="500px" width="600px" alt="" />
-			</div>
-			<div class="arrow-btn">
-				<a href="#portfolio"><i class="fas fa-angle-down arrow animate__animated animate__bounce"></i></a>
-			</div>
-		</div>
-
-		<div class="svg">
-			<img src="wave1.svg" class="wave" alt="" />
-		</div>
-
-		<section id="about mb-5">
-			<div class="container">
-				<h2 class="text-center mb-5 " data-aos="fade-up">About Me</h2>
-				<div class="row mb-5">
-					
-						<div class="col-md-6" data-aos="fade-right">
-						
-							<img src="img/about.svg" width="400px" height="300px" alt="" class="about-img ">
-						
-						
-					</div>
-					<div class="col-lg-6 p-5" data-aos="fade-left">
-						<h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, odit ab neque corporis reprehenderit labore iusto nobis recusandae debitis!</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, odit ab neque corporis reprehenderit labore iusto nobis recusandae debitis!</p>
-						<a href="#" class="btn btn-lg btn-success mt-3">Find Out More</a>
-					</div>
-					
-					
-					
-				</div>
-			</div>
-
-		</section>
-
-		<section id="tech-stack">
-			<div class="container text-center">
-				<div class="row">
-					<div data-aos="flip-left" class="col-lg-4">
-						<i  class="fab fa-stripe stack"></i>
-					</div>
-					<div data-aos="flip-left"class="col-lg-4">
-						<i class="fab fa-react stack"></i>
-					</div>
-					<div data-aos="flip-left" class="col-lg-4">
-						<i class="fab fa-node stack"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		
-
-		<section  data-aos="fade-right" id="portfolio" class="bg-light p-5" >
-			<h2 class="text-center">Portfolio</h2>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="filters text-center">
-							<li class="active" data-filter="*"><a href="#!">All</a></li>
-							<li data-filter=".html"><a href="#!">HTML</a></li>
-							<li data-filter=".css"><a href="#!">CSS</a></li>
-							<li data-filter=".javascript"><a href="#!">JavaScript</a></li>
+	<body>
+		<main>
+			<nav class="navbar navbar-expand-lg fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand text-white" href="#">Chris Harvey</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Services</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Porfolio</a>
+							</li>
 						</ul>
-						
-						<div class="projects">
-							<div class="row">
-								<div class="col-lg-4 item html">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="/img/image.jpg" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h3>lorem ipsum</h3>
-												<p>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit.
-													Deleniti inventore obcaecati illo earum ipsum nemo ad error
-													laboriosam a tempora!
-												</p>
+					</div>
+				</div>
+			</nav>
+
+			<div class="wrapper">
+				<div class="showcase-text">
+					<div class="animate__animated animate__slideInLeft showcase-slide">
+						<h1 class="showcase-title">React Front End Developer</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti?</p>
+						<a href="#portfolio" class="btn btn-lg btn-success">Portfolio</a>
+						<button
+							class="btn btn-lg btn-primary text-white ml-3"
+							data-toggle="modal"
+							data-target="#exampleModal"
+						>
+							Contact
+						</button>
+					</div>
+					<div
+						class="modal fade"
+						id="exampleModal"
+						tabindex="-1"
+						role="dialog"
+						aria-labelledby="exampleModalLabel"
+						aria-hidden="true"
+					>
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-dark" id="exampleModalLabel">Lets Work Together</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body text-dark">
+									<h3 class="text-center mb-3">Contact Me</h3>
+									<form class="needs-validation" novalidate>
+										<div class="form-group">
+											<input
+												type="text"
+												name="name"
+												placeholder="Name..."
+												class="form-control"
+												required
+											/>
+											<div class="invalid-feedback">Please enter a valid name</div>
+										</div>
+
+										<div class="form-group">
+											<input
+												type="email"
+												name="email"
+												placeholder="Email..."
+												class="form-control"
+												required
+											/>
+											<div class="invalid-feedback">Please enter a valid email address.</div>
+										</div>
+
+										<div class="form-group">
+											<input
+												type="text"
+												name="subject"
+												placeholder="Subject..."
+												class="form-control"
+												required
+											/>
+											<div class="invalid-feedback">Please enter a valid subject</div>
+										</div>
+
+										<div class="form-group">
+											<textarea
+												type="text"
+												name="message"
+												placeholder="Message..."
+												class="form-control"
+												required
+											></textarea>
+											<div class="invalid-feedback">Please enter a valid message</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">
+												Close
+											</button>
+											<button type="submit" class="btn btn-primary">Submit</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="main-img animate__animated animate__bounce d-none d-sm-none d-md-none d-lg-block">
+					<img src="img/ecommerce.png" height="500px" width="600px" alt="" />
+				</div>
+				<div class="arrow-btn">
+					<a href="#portfolio"><i class="fas fa-angle-down arrow animate__animated animate__bounce"></i></a>
+				</div>
+			</div>
+
+			<div class="svg">
+				<img src="wave1.svg" class="wave" alt="" />
+			</div>
+
+			<section id="about mb-5">
+				<div class="container">
+					<h2 class="text-center" data-aos="fade-up">About Me</h2>
+					<div class="row mb-5">
+						<div class="col-md-6" data-aos="fade-right">
+							<img src="img/about.svg" width="400px" height="300px" alt="" class="about-img d-none d-sm-none d-md-none d-lg-block" />
+						</div>
+						<div class="col-lg-6 p-5" data-aos="fade-left">
+							<h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, odit ab neque
+								corporis reprehenderit labore iusto nobis recusandae debitis!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, odit ab neque
+								corporis reprehenderit labore iusto nobis recusandae debitis!
+							</p>
+							<a href="#" class="btn btn-lg btn-success mt-3">Find Out More</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="tech-stack">
+				<div class="container text-center">
+					<div class="row">
+						<div data-aos="flip-left" class="col-lg-4">
+							<i class="fab fa-stripe stack"></i>
+						</div>
+						<div data-aos="flip-left" class="col-lg-4">
+							<i class="fab fa-react stack"></i>
+						</div>
+						<div data-aos="flip-left" class="col-lg-4">
+							<i class="fab fa-node stack"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-aos="fade-right" id="portfolio" class="bg-light p-5">
+				<h2 class="text-center">Portfolio</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="filters text-center">
+								<li class="active" data-filter="*"><a href="#!">All</a></li>
+								<li data-filter=".html"><a href="#!">HTML</a></li>
+								<li data-filter=".css"><a href="#!">CSS</a></li>
+								<li data-filter=".javascript"><a href="#!">JavaScript</a></li>
+							</ul>
+
+							<div class="projects">
+								<div class="row">
+									<div class="col-lg-4 item html">
+										<div data-aos="fade-right" class="card">
+											<div class="card-head">
+												<img src="/img/image.jpg" class="img-fluid card-img" />
+												<div class="card-overlay"></div>
+												<div class="card-hover">
+													<h3 class="mt-2">lorem Ipsum</h3>
+													<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+													<div class="view">
+														<a href=""><i class="fab fa-github fa-2x"></i></a>
+														<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-4 item css">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="/img/image.jpg" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h3>lorem ipsum</h3>
-												<p>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit.
-													Deleniti inventore obcaecati illo earum ipsum nemo ad error
-													laboriosam a tempora!
-												</p>
+									<div class="col-lg-4 item css">
+										<div data-aos="fade-right" class="card">
+											<div class="card-head">
+												<img src="/img/image.jpg" class="img-fluid card-img" />
+												<div class="card-overlay"></div>
+												<div class="card-hover">
+													<h3 class="mt-2">lorem Ipsum</h3>
+													<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+													<div class="view">
+														<a href=""><i class="fab fa-github fa-2x"></i></a>
+														<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-4 item javascript">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="/img/image.jpg" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h3>lorem ipsum</h3>
-												<p>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit.
-													Deleniti inventore obcaecati illo earum ipsum nemo ad error
-													laboriosam a tempora!
-												</p>
+									<div class="col-lg-4 item javascript">
+										<div data-aos="fade-right" class="card">
+											<div class="card-head">
+												<img src="/img/image.jpg" class="img-fluid card-img" />
+												<div class="card-overlay"></div>
+												<div class="card-hover">
+													<h3 class="mt-2">lorem Ipsum</h3>
+													<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+													<div class="view">
+														<a href=""><i class="fab fa-github fa-2x"></i></a>
+														<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-4 item html">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="/img/image.jpg" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h3>lorem ipsum</h3>
-												<p>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit.
-													Deleniti inventore obcaecati illo earum ipsum nemo ad error
-													laboriosam a tempora!
-												</p>
+									<div class="col-lg-4 item html">
+										<div data-aos="fade-right" class="card">
+											<div class="card-head">
+												<img src="/img/image.jpg" class="img-fluid card-img" />
+												<div class="card-overlay"></div>
+												<div class="card-hover">
+													<h3 class="mt-2">lorem Ipsum</h3>
+													<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+													<div class="view">
+														<a href=""><i class="fab fa-github fa-2x"></i></a>
+														<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-4 item css">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="/img/image.jpg" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h3>lorem ipsum</h3>
-												<p>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit.
-													Deleniti inventore obcaecati illo earum ipsum nemo ad error
-													laboriosam a tempora!
-												</p>
+									<div class="col-lg-4 item css">
+										<div data-aos="fade-right" class="card">
+											<div class="card-head">
+												<img src="/img/image.jpg" class="img-fluid card-img" />
+												<div class="card-overlay"></div>
+												<div class="card-hover">
+													<h3 class="mt-2">lorem Ipsum</h3>
+													<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+													<div class="view">
+														<a href=""><i class="fab fa-github fa-2x"></i></a>
+														<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-4 item javascript">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="/img/image.jpg" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h3>lorem ipsum</h3>
-												<p>
-													Lorem ipsum dolor sit amet consectetur adipisicing elit.
-													Deleniti inventore obcaecati illo earum ipsum nemo ad error
-													laboriosam a tempora!
-												</p>
+									<div class="col-lg-4 item javascript">
+										<div data-aos="fade-right" class="card">
+											<div class="card-head">
+												<img src="/img/image.jpg" class="img-fluid card-img" />
+												<div class="card-overlay"></div>
+												<div class="card-hover">
+													<h3 class="mt-2">lorem Ipsum</h3>
+													<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+													<div class="view">
+														<a href=""><i class="fab fa-github fa-2x"></i></a>
+														<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -271,83 +307,100 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section id="testimonials" data-aos="fade-left">
-			<h2 class="text-center mt-5">What My Customers Think</h2>
-			<div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
-				<!-- Carousel indicators -->
-				<ul class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ul>   
-				<!-- Wrapper for carousel items -->
-				<div class="carousel-inner">		
-					<div class="carousel-item active">
-						<div class="img-box"><img src="/examples/images/clients/3.jpg" alt=""></div>
-						<p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-						<p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+			<section id="testimonials" data-aos="fade-left">
+				<h2 class="text-center mt-5">What My Customers Think</h2>
+				<div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
+					<!-- Carousel indicators -->
+					<ul class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ul>
+					<!-- Wrapper for carousel items -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="img-box"><img src="/examples/images/clients/3.jpg" alt="" /></div>
+							<p class="testimonial">
+								Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus
+								mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus
+								risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget
+								rutrum.
+							</p>
+							<p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+						</div>
+						<div class="carousel-item">
+							<div class="img-box"><img src="/examples/images/clients/1.jpg" alt="" /></div>
+							<p class="testimonial">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam
+								at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.
+								Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non
+								aliquet.
+							</p>
+							<p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
+						</div>
+						<div class="carousel-item">
+							<div class="img-box"><img src="/examples/images/clients/2.jpg" alt="" /></div>
+							<p class="testimonial">
+								Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit
+								tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis.
+								Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus
+								auctor velit.
+							</p>
+							<p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
+						</div>
+					</div>
+					<!-- Carousel controls -->
+					<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+						<i class="fa fa-angle-left"></i>
+					</a>
+					<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+						<i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+			</section>
+
+			<footer>
+				<div class="foot-wrapper">
+					<div class="footer-inner">
+						
+						<div class="socials">
+							<li>
+								<a href=""><i class="fab fa-github"></i></a>
+							</li>
+							<li>
+								<a href=""><i class="fab fa-linkedin"></i></a>
+							</li>
+						</div>
+						<div>
+							<p>Copyright &copy; Chris Harvey 2020</p>
+						</div>
+						<div class="totop">
+							<i class="fas fa-arrow-up"></i>
+						</div>
 						
 					</div>
-					<div class="carousel-item">
-						<div class="img-box"><img src="/examples/images/clients/1.jpg" alt=""></div>
-						<p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-						<p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
-						
-					</div>
-					<div class="carousel-item">
-						<div class="img-box"><img src="/examples/images/clients/2.jpg" alt=""></div>
-						<p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
-						<p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
-						
-					</div>		
 				</div>
-				<!-- Carousel controls -->
-				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-					<i class="fa fa-angle-left"></i>
-				</a>
-				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
-					<i class="fa fa-angle-right"></i>
-				</a>
-			</div>
-		</section>
-		
-		
-		<footer>
-			
-			<div class="foot-wrapper">
-				<div class="socials mt-5">
-					<li>
-						<a href=""><i class="fab fa-github"></i></a>
-					</li>
-					<li>
-						<a href=""><i class="fab fa-linkedin"></i></a>
-					</li>
-				</div>
-				<div>
-					<p>Copyright &copy; Chris Harvey 2020 </p>
-				</div>
-				<div class="totop">
-					<i class="fas fa-arrow-up"></i>
-				</div>
-			</div>
+			</footer>
+		</main>
 
-		</footer>
-	</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-	</script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/1ed1ca371c7921da29244b033/3dd48e7265d4eed33d78077cc.js");</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-	<script src="js/main.js"></script>
-	<script src="js/validation.js"></script>
-</body>
-
+		<script src="js/main.js"></script>
+		<script src="js/validation.js"></script>
+	</body>
 </html>

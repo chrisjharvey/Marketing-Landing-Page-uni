@@ -34,17 +34,25 @@ AOS.init();
         $(this).find('.card-hover').css({'top': '100%'});
     });
 
-    $(document).ready(function() {
-        // Transition effect for navbar 
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
+        function checkScroll(){
           if($(this).scrollTop() > 200) { 
               $('.navbar').addClass('solid');
           } else {
               $('.navbar').removeClass('solid');
           }
-        });
+        };
+
+
+$(document).ready(function(){
+    checkScroll();
+    $(window).scroll(checkScroll);
+    $('.navbar-toggler').click(function(){
+        if($(window).scrollTop() <= 300) {
+            $('nav.navbar').toggleClass('solid-toggle');
+        }
+    });
 });
+
 
 })(jQuery); 
     
