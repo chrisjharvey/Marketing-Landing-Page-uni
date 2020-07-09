@@ -1,0 +1,20 @@
+#blogheader {
+	height: 40vh;
+	color: #fff;
+	background: #429ffd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blog-card-img .blog {
+	max-width: 100%;
+}
+
+.blog-img {
+    text-align: center;
+}
+
+.blog-main p {
+	font-size: 20px;
+}
