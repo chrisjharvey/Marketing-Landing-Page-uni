@@ -15,6 +15,16 @@ body {
 	overflow-x: hidden;
 }
 
+.btn {
+	background: #11C149 !important;
+	color: #fff;
+	border-radius: 15px !important;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.522);
+}
+.btn:hover {
+	background: rgba(17, 193, 73, 0.872)!important;
+	color: #fff;
+}
 .navbar {
 	/* padding: .7rem 3rem; */
 	text-transform: uppercase;
@@ -22,6 +32,8 @@ body {
 	letter-spacing: 0.1rem;
 	font-size: 1.2rem;
 	transition: background-color 2s ease;
+	
+	
 }
 
 .navbar-brand {
@@ -41,16 +53,20 @@ body {
 }
 .navbar-nav .nav-link {
 	color: #fff;
-	padding-top: 0.8rem;
+	
 }
 
-.navbar-nav .nav-link.active,
+.navbar-nav .nav-item.active,
 .navbar-nav .nav-link:hover {
-	color: #e6e6e6;
+	color: #11C149 !important;
 }
 
 .custom-toggler-icon {
 	color: #fff;
+	font-size: 1.6rem;
+}
+.custom-toggler-icon.solid {
+	color: #333;
 	font-size: 1.6rem;
 }
 
@@ -62,12 +78,14 @@ body {
 }
 
 .navbar.solid {
-	background: rgba(0, 0, 0, 0.7) !important;
+	background: #333 !important;
 	transition: background-color 1s ease;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
 .navbar.solid-toggle {
-	background: rgba(0, 0, 0, 0.7) !important;
+	background: #333 !important;
 	transition: background-color 1s ease;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .wrapper {
@@ -75,15 +93,15 @@ body {
 	height: 100vh;
 	align-items: center;
 	justify-content: space-evenly;
-	background: #429ffd;
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(59,149,237,1) 0%, rgba(7,91,173,1) 90% );
 	color: #fff;
-	position: relative;
-	margin-bottom: -10px;
+	
+	
 }
 
 .wrapper h1 {
 	font-size: 3rem;
-	text-shadow: 0.1rem 0.1rem 0.8rem #333;
+	/* text-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.4); */
 	padding-bottom: 1rem;
 }
 
@@ -92,13 +110,14 @@ body {
 	top: 90vh;
 	left: 50vw;
 }
+
 .arrow-btn i {
 	font-size: 2rem;
-	color: rgba(255, 255, 255, 0.801);
+	color: #fff;
 }
 
 .arrow-btn i:hover {
-	color: #fff;
+	color: #11C149;
 }
 
 .arrow {
@@ -109,13 +128,11 @@ body {
 	text-align: center;
 	margin-bottom: 10px;
 	font-size: 2rem;
-	color: #429ffd;
+	color: #00BFFF;
 }
 
-.wave {
-}
 
-#tech-stack {
+/* #tech-stack {
 	font-size: 120px;
 	margin-bottom: 50px;
 	color: #ddd;
@@ -123,6 +140,44 @@ body {
 
 .stack:hover {
 	color: #27a744;
+} */
+
+#portfolio {
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(59,149,237,1) 0%, rgba(7,91,173,1) 90% );
+
+}
+
+.what-i-do-text {
+	max-width: 600px;
+	text-align: center;
+	margin: auto;
+}
+
+#what-i-do .card {
+	
+	border: none !important;
+	
+	color: #333;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#what-i-do .card:hover {
+	position: relative;
+	margin-bottom: 20px;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+	
+}
+
+.card-inner {
+	padding: 15px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 ul.filters {
@@ -140,31 +195,32 @@ ul.filters > li {
 
 ul.filters > li > a {
 	display: block;
-	color: #333;
+	color: #fff;
 	text-decoration: none;
 	padding: 5px 20px;
 	border-radius: 3px;
 }
 
 ul.filters > li > a:hover {
-	background-color: #429ffd;
+	background-color: #11C149;
 	color: #fff;
 }
 
 ul.filters > li.active > a {
 	color: #fff;
-	background: #429ffd;
+	background: #11C149;
 }
 
 .card {
 	position: relative;
+	border: none !important;
 	margin-bottom: 20px;
 	color: #333;
 	border-radius: 0;
-	border: 1px solid #429ffd;
-	background-color: #fff;
-	box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 }
+
+
 
 .card-head {
 	position: relative;
@@ -191,7 +247,7 @@ ul.filters > li.active > a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: #11C149;
 	z-index: 10;
 	display: flex;
 	align-items: center;
@@ -200,7 +256,7 @@ ul.filters > li.active > a {
 	flex-direction: column;
 	padding: 50px;
 	text-align: center;
-	transition: ease-in-out 0.2s;
+	transition: ease-in;
 }
 
 .view a i {
@@ -208,7 +264,7 @@ ul.filters > li.active > a {
 	color: #fff;
 }
 .view a i:hover {
-	color: #27a744;
+	color: #11C149;
 }
 
 #testimonials {
@@ -235,11 +291,11 @@ ul.filters > li.active > a {
 	min-height: 290px;
 }
 .carousel .carousel-item .img-box {
-	width: 135px;
-	height: 135px;
+	width: 100px;
+	height: 100px;
 	margin: 0 auto;
-	padding: 5px;
-	border: 1px solid #ddd;
+	padding: 0px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 50%;
 }
 .carousel .img-box img {
@@ -258,7 +314,7 @@ ul.filters > li.active > a {
 }
 .carousel .overview b {
 	text-transform: uppercase;
-	color: #27a744;
+	color: #11C149;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -274,7 +330,7 @@ ul.filters > li.active > a {
 	line-height: 40px;
 	position: absolute;
 	display: inline-block;
-	color: #429ffd;
+	color: #00BFFF;
 	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
 }
 .carousel-indicators {
@@ -289,12 +345,12 @@ ul.filters > li.active > a {
 	border: none;
 }
 .carousel-indicators li {
-	background: #429ffd;
+	background: #00BFFF;
 	border-color: transparent;
 	box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 .carousel-indicators li.active {
-	background: #429ffd;
+	background: #00BFFF;
 	box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -311,10 +367,29 @@ ul.filters > li.active > a {
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+
+
+.form-wrapper {
+	max-width: 500px;
+	border-radius: 10px;
+	margin: auto;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+	padding: 20px;
+}
+
+.form-wrapper input, textarea {
+	margin: 10px 0;
+	padding: 20px;
+}
+.form-wrapper textarea {
+	padding: 10px 20px 50px;
+	
+}
+
 footer {
 	height: 400px;
 	display: flex;
-	background: #429ffd;
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(59,149,237,1) 0%, rgba(7,91,173,1) 90% );
 }
 
 .footer-inner {
@@ -352,8 +427,8 @@ footer {
 }
 
 .social-list li a:hover {
-	background-color: #27a744;
-	border-color: #27a744;
+	background-color: #11C149;
+	border-color: #11C149;
 	color: #fff;
 }
 
