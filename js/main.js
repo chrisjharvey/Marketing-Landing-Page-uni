@@ -1,58 +1,52 @@
 AOS.init();
 
+(function () {
+	'use strict';
 
-(function(){
+	var $projects = $('.projects');
 
-    'use strict'
+	$projects.isotope({
+		itemSelector: '.item',
+		layoutMode: 'fitRows',
+	});
 
-    var $projects = $('.projects');
+	$('ul.filters > li').on('click', function (e) {
+		e.preventDefault();
 
-    $projects.isotope({
-        itemSelector:'.item',
-        layoutMode: 'fitRows'
-    });
+		var filter = $(this).attr('data-filter');
 
-    $('ul.filters > li').on('click', function(e){
-        e.preventDefault();
+		$('ul.filters > li').removeClass('active');
+		$(this).addClass('active');
 
-        var filter = $(this).attr('data-filter')
+		$projects.isotope({ filter: filter });
+	});
 
-        $('ul.filters > li').removeClass('active');
-        $(this).addClass('active');
+	$('.card')
+		.mouseenter(function () {
+			$(this).find('.card-overlay').css({ top: '-100%' });
+			$(this).find('.card-hover').css({ top: '0' });
+		})
+		.mouseleave(function () {
+			$(this).find('.card-overlay').css({ top: '0' });
+			$(this).find('.card-hover').css({ top: '100%' });
+		});
 
-        $projects.isotope({filter: filter});
+	function checkScroll() {
+		if ($(this).scrollTop() > 200) {
+			$('.navbar').addClass('solid');
+		} else {
+			$('.navbar').removeClass('solid');
+		}
+	}
 
-    });
-
-    $('.card').mouseenter(function(){
-        $(this).find('.card-overlay').css({'top': '-100%'});
-        $(this).find('.card-hover').css({'top': '0'});
-
-    }).mouseleave(function(){
-
-        $(this).find('.card-overlay').css({'top': '0'});
-        $(this).find('.card-hover').css({'top': '100%'});
-    });
-
-        function checkScroll(){
-          if($(this).scrollTop() > 200) { 
-              $('.navbar').addClass('solid');
-          } else {
-              $('.navbar').removeClass('solid');
-          }
-        };
-
-
-$(document).ready(function(){
-    checkScroll();
-    $(window).scroll(checkScroll);
-    $('.navbar-toggler').click(function(){
-        if($(window).scrollTop() <= 300) {
-            $('nav.navbar').toggleClass('solid-toggle');
-        }
-    });
-});
-
-
-})(jQuery); 
-    
+	$(document).ready(function () {
+		checkScroll();
+		$(window).scroll(checkScroll);
+		$('.navbar-toggler').click(function () {
+			if ($(window).scrollTop() <= 300) {
+				$('nav.navbar').toggleClass('solid-toggle');
+			}
+		});
+	});
+})(jQuery);
+ 
