@@ -148,13 +148,13 @@ body {
 	);
 }
 
-.what-i-do-text {
+.services-text {
 	max-width: 600px;
 	text-align: center;
 	margin: auto;
 }
 
-#what-i-do .card {
+#services .card {
 	border: none !important;
 
 	color: #333;
@@ -163,7 +163,7 @@ body {
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-#what-i-do .card:hover {
+#services .card:hover {
 	position: relative;
 	margin-bottom: 20px;
 	color: #333;
