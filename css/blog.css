@@ -1,7 +1,11 @@
 #blogheader {
 	height: 40vh;
 	color: #fff;
-	background: #429ffd;
+	background-image: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(59, 149, 237, 1) 0%,
+		rgba(7, 91, 173, 1) 90%
+	);
 	display: flex;
 	justify-content: center;
 	align-items: center;

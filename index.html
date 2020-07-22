@@ -19,7 +19,7 @@
 		<title>Front End Developer: Chris Harvey</title>
 	</head>
 
-	<body>
+	<body data-spy="scroll" data-target="#main-nav" id="home">
 		<nav class="navbar navbar-expand-lg fixed-top">
 			<div class="container-fluid">
 				<a class="navbar-brand text-white" href="#">Chris Harvey</a>
@@ -37,7 +37,7 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#about">About</a>
@@ -56,14 +56,14 @@
 		<div class="wrapper">
 			<div class="showcase-text">
 				<div class="animate__animated animate__slideInLeft showcase-slide">
-					<h1 class="showcase-title">Front End Developer</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti?</p>
-					<a href="#portfolio" class="btn text-white btn-lg">Portfolio</a>
+					<h1>Chris Harvey</h1>
+					<h3 class="ml-1">Front End Web Developer</h3>
+					<a href="#portfolio" class="btn text-white btn-lg mt-3 ml-1">Portfolio</a>
 				</div>
 			</div>
 
 			<div class="main-img animate__animated animate__bounce d-none d-sm-none d-md-none d-lg-block">
-				<img src="img/ecommerce.png" height="500px" width="600px" alt="" />
+				<img src="img/ecommerce.png" height="500px" width="600px" alt="hero-img" class="hero-img"/>
 			</div>
 			<div class="arrow-btn">
 				<a href="#portfolio"><i class="fas fa-angle-down arrow animate__animated animate__bounce"></i></a>
@@ -84,7 +84,7 @@
 						/>
 					</div>
 					<div class="col-lg-6 p-5 about-text" data-aos="fade-left">
-						<h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h4>
+						<h4>Front End Web Developer Who Specialises in E-commerce Solutions</h4>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, odit ab neque
 							corporis reprehenderit labore iusto nobis recusandae debitis!
@@ -93,7 +93,7 @@
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, odit ab neque
 							corporis reprehenderit labore iusto nobis recusandae debitis!
 						</p>
-						<a href="#" class="btn btn-lg mt-3 text-white about-btn">Find Out More</a>
+						<a href="#" class="btn btn-lg my-3 mx-2 text-white about-btn">Find Out More</a>
 					</div>
 				</div>
 				<!-- <div id="tech-stack">
@@ -281,16 +281,52 @@
 			</div>
 		</section>
 
-		<section id="testimonials" data-aos="fade-left" class="p-5 mb-5">
+		<section id="testimonials1" class="py-5">
+			<h2 class="text-center mt-5" data-aos="fade-up">What My Customers Think</h2>
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="testimonial-1 rounded my-3" data-aos="fade-right">
+							<i class="fas fa-quote-left fa-2x pb-3"></i>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
+							<div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/sKDeBrg.jpg" width="40">
+								<div class="ml-2 about"><span class="d-block name">Giralle Cross</span><span class="place">Operator Trade, Little AR, TX</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="testimonial-2 rounded my-3" data-aos="fade-right">
+							<i class="fas fa-quote-left fa-2x pb-3"></i>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
+							<div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/aZ9cakV.jpg" width="40">
+								<div class="ml-2 about"><span class="d-block name">Sam Cross</span><span class="place-2">Android Developer, Little AR, TX</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="testimonial-1 rounded my-3" data-aos="fade-right">
+							<i class="fas fa-quote-left fa-2x pb-3"></i>
+							<!-- <img class="mb-3" src="https://i.imgur.com/ECXzJ1k.png" width="40"> -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
+							<div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/LP0U10y.jpg" width="40">
+								<div class="ml-2 about"><span class="d-block name">Marry Cross</span><span class="place">Operator Trade, Little AR, CA</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <section id="testimonials" data-aos="fade-left" class="p-5 mb-5">
 			<h2 class="text-center mt-5" data-aos="fade-up">What My Customers Think</h2>
 			<div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
-				<!-- Carousel indicators -->
+				
 				<ul class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
 					<li data-target="#myCarousel" data-slide-to="2"></li>
 				</ul>
-				<!-- Wrapper for carousel items -->
+				
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="img-box"><img src="img/person2.png" alt="" /></div>
@@ -321,7 +357,7 @@
 						<p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
 					</div>
 				</div>
-				<!-- Carousel controls -->
+				
 				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
 					<i class="fa fa-angle-left"></i>
 				</a>
@@ -329,14 +365,14 @@
 					<i class="fa fa-angle-right"></i>
 				</a>
 			</div>
-		</section>
+		</section> -->
 
 		<section id="blog" class="py-5 bg-light">
 			<h2 class="text-center pb-5" data-aos="fade-up">Blog</h2>
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="card" data-aos="fade-right">
+						<div class="card" data-aos="fade-left">
 							<div class="card-img">
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
@@ -350,7 +386,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4">
-						<div class="card" data-aos="fade-right">
+						<div class="card" data-aos="fade-left">
 							<div class="card-img">
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
@@ -364,7 +400,7 @@
 						</div>
 					</div>
 					<div class="col-lg-4">
-						<div class="card" data-aos="fade-right">
+						<div class="card" data-aos="fade-left">
 							<div class="card-img">
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
@@ -384,7 +420,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="form-wrapper" data-aos="fade-left">
+						<div class="form-wrapper" data-aos="fade-right">
 						<form  class="needs-validation" netlify novalidate>
 							<div class="form-header">
 								
@@ -449,7 +485,7 @@
 		<footer>
 			<div class="footer-inner">
 				<div class="socials">
-					<ul class="social-list" data-aos="fade-right">
+					<ul class="social-list" data-aos="fade-left">
 						<li>
 							<a href="">
 								<i class="fab fa-facebook-f"></i>
@@ -491,6 +527,9 @@
 				'https://chimpstatic.com/mcjs-connected/js/users/1ed1ca371c7921da29244b033/3dd48e7265d4eed33d78077cc.js'
 			);
 		</script>
+		<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPpDanMp2Dd3hcu0XS7dkFmeoCmgzftvs&callback=initMap"
+    type="text/javascript"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 		<script

@@ -6,9 +6,9 @@
 	box-sizing: border-box;
 }
 
-html {
+/* html {
 	scroll-behavior: smooth;
-}
+} */
 
 body {
 	font-family: 'Ubuntu', sans-serif !important;
@@ -24,6 +24,11 @@ body {
 .btn:hover {
 	background: rgba(17, 193, 73, 0.872) !important;
 	color: #fff;
+}
+
+.navbar-nav .active > .nav-link,
+.nav-item .nav-link:hover {
+	color: #11c149 !important;
 }
 .navbar {
 	/* padding: .7rem 3rem; */
@@ -53,7 +58,7 @@ body {
 	color: #fff;
 }
 
-.navbar-nav .nav-item.active,
+
 .navbar-nav .nav-link:hover {
 	color: #11c149 !important;
 }
@@ -99,15 +104,14 @@ body {
 }
 
 .wrapper h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 	/* text-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.4); */
-	padding-bottom: 1rem;
 }
 
 .arrow-btn {
 	position: absolute;
 	top: 90vh;
-	left: 50vw;
+	left: 50%;
 }
 
 .arrow-btn i {
@@ -251,6 +255,7 @@ ul.filters > li.active > a {
 	justify-content: center;
 	color: #fff;
 	flex-direction: column;
+	border-radius: 3px;
 	padding: 50px;
 	text-align: center;
 	transition: ease-in;
@@ -261,10 +266,49 @@ ul.filters > li.active > a {
 	color: #fff;
 }
 .view a i:hover {
-	color: #11c149;
+	color: #333;
 }
 
-#testimonials {
+#testimonials1 {
+
+}
+
+
+
+.testimonial-1, .testimonial-2{
+    background: #fff;
+    padding: 14px;
+	color: #000;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* .col-md-4 {
+    margin-top: 25px;
+} */
+
+.name {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: -3px
+}
+
+.place, .place-2 {
+    font-size: 13px;
+}
+
+
+.testimonial-1:hover,
+ .testimonial-2:hover {
+    background-image: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(59, 149, 237, 1) 0%,
+		rgba(7, 91, 173, 1) 90%
+	);
+    padding: 14px;
+    color: #fff;
+}
+
+/* #testimonials {
 	height: 600px;
 }
 
@@ -349,7 +393,7 @@ ul.filters > li.active > a {
 .carousel-indicators li.active {
 	background: #00bfff;
 	box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 
 #blog {
 	margin-top: 0px;
@@ -431,7 +475,12 @@ footer {
 	color: #fff;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+	.wrapper h1 {
+		font-size: 2.5rem;
+	}
+
+	
 }
 @media (max-width: 768px) {
 	body {
@@ -461,5 +510,16 @@ footer {
 	.about-text .about-btn {
 		margin: 0 100px;
 		justify-content: center;
+	}
+	.card-img .ecomm {
+		width: 100%;
+		height: 250px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.hero-img {
+		height: 450px;
+		width: 400px;
 	}
 }
