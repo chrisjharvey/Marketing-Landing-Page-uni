@@ -3,6 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Chris Harvey">
+    <!-- description -->
+    	<meta name="description" content="I'm a Freelance Web Developer in London. I work with small businesses to help them
+		establish a professional online presence.">
+    <!-- keywords -->
+    	<meta name="keywords" content="website for small business, web developer, web designer, wordpress theme development, responsive website design, bootstrap 4, web developer london, web developer uk, web design uk, web design london">
 
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/blog.css" />
@@ -11,16 +17,19 @@
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 			crossorigin="anonymous"
-		/>
+			/>
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-		<title>Front End Developer: Chris Harvey</title>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+			/>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+			/>
+		<title>Web Design & Developer: Chris Harvey</title>
 	</head>
 
-	<body data-spy="scroll" data-target="#main-nav" id="home">
-		<nav class="navbar navbar-expand-lg fixed-top">
+	<body>
+		<nav class="navbar navbar-expand-lg fixed-top" id ="#nav">
 			<div class="container-fluid">
 				<a class="navbar-brand text-white" href="#">Chris Harvey</a>
 				<button
@@ -30,43 +39,53 @@
 					data-target="#navbarNavDropdown"
 					aria-controls="navbarNavDropdown"
 					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
+					aria-label="Toggle navigation">
 					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link scroll" href="#home">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">About</a>
+							<a class="nav-link scroll" href="#about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#portfolio">Portfolio</a>
+							<a class="nav-link scroll" href="#services">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="blog.html">Blog</a>
+							<a class="nav-link scroll" href="#portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#blog">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#contact">Contact</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<div class="wrapper">
-			<div class="showcase-text">
-				<div class="animate__animated animate__slideInLeft showcase-slide">
+		
+			<div class="wrapper" id="home">
+				<div class="showcase-text">
+					<div class="animate__animated animate__slideInLeft showcase-slide">
 					<h1>Chris Harvey</h1>
-					<h3 class="ml-1">Front End Web Developer</h3>
+					<h3 class="ml-1">Web Design & Developer</h3>
 					<a href="#portfolio" class="btn text-white btn-lg mt-3 ml-1">Portfolio</a>
 				</div>
 			</div>
+		
 
-			<div class="main-img animate__animated animate__bounce d-none d-sm-none d-md-none d-lg-block">
-				<img src="img/ecommerce.png" height="500px" width="600px" alt="hero-img" class="hero-img"/>
+			<div class="main-img animate__animated animate__bounce d-none d-sm-none
+				d-md-none d-lg-block">
+				<img src="img/code.svg" alt="hero-img" class="hero-img" height="700px"
+					width="650px" />
 			</div>
 			<div class="arrow-btn">
-				<a href="#portfolio"><i class="fas fa-angle-down arrow animate__animated animate__bounce"></i></a>
+				<a href="#portfolio"><i class="fas fa-angle-down arrow animate__animated
+						animate__bounce"></i></a>
 			</div>
 		</div>
 
@@ -81,82 +100,106 @@
 							height="400px"
 							alt=""
 							class="about-img d-none d-sm-none d-md-none d-lg-block"
-						/>
+							/>
 					</div>
 					<div class="col-lg-6 p-5 about-text" data-aos="fade-left">
-						<h4>Front End Web Developer Who Specialises in E-commerce Solutions</h4>
+						<h3>Web Designer & Developer based in London</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, odit ab neque
-							corporis reprehenderit labore iusto nobis recusandae debitis!
+							Hi, my name is Chris. I am a Freelance Web Developer who specialises in
+							custom website development. I work with small businesses to help them
+							establish a professional online presence.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga officia, odit ab neque
-							corporis reprehenderit labore iusto nobis recusandae debitis!
+							My services range from web design, development
+							and consulting. All of my websites are designed with a mobile-first
+							approach, making your website perfect for all screen sizes.
 						</p>
-						<a href="#" class="btn btn-lg my-3 mx-2 text-white about-btn">Find Out More</a>
+						<div class="about-btn">
+							<a href="#services" class="btn btn-lg text-white about-btn">View
+								My Work</a>
+						</div>
+
 					</div>
 				</div>
-				<!-- <div id="tech-stack">
-					<div class="container text-center">
-						<div class="row">
-							<div data-aos="flip-left" class="col-lg-4">
-								<i class="fab fa-stripe stack"></i>
-							</div>
-							<div data-aos="flip-left" class="col-lg-4">
-								<i class="fab fa-react stack"></i>
-							</div>
-							<div data-aos="flip-left" class="col-lg-4">
-								<i class="fab fa-node stack"></i>
-							</div>
-						</div>
-					</div>
-				</div> -->
+
 			</div>
 		</section>
 
-		<section id="services" class="mt-3 py-5 bg-light">
+		<section id="services" class="py-5 bg-light">
 			<div class="container">
 				<div class="services-text">
-					<h2 class="pb-3" data-aos="fade-up">Services</h2>
+					<h2 class="pb-3 green-highlight" data-aos="fade-up">Services</h2>
 					<p class="pb-3">
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis explicabo ut autem
-						similique tempore voluptatibus neque nam cumque porro officiis.
+						I aim to make a website that you can be proud of, a website that looks
+						great on all screen sizes, is user friendly and fast.
 					</p>
 				</div>
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="card" data-aos="fade-right">
-							<div class="card-inner px-4">
-								<img src="img/screen-1.png" height="80px" width=" 80px" alt="design" />
-								<h4 class="py-3">UI Design</h4>
-								<p>
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ratione corrupti
-									quibusdam iure ipsam sequi consectetur tempore doloribus delectus quaerat?
-								</p>
+						<div class="card">
+							<div class="card-inner">
+							    <div class="service-icon">
+									<i class="fa fa-paint-brush "></i>
+								</div>
+								<h4 class="py-2">Web Design</h4> 
+								<p class="py-2">Starting with wireframes and mock-ups. All aspects of the design process will be checked to ensure it’s nothing short of perfection before development.</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4">
-						<div class="card" data-aos="fade-right">
-							<div class="card-inner px-4">
-								<img src="img/browser-3.png" height="80px" width=" 80px" alt="design" />
-								<h4 class="py-3">Front End Development</h4>
-								<p>
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ratione corrupti
-									quibusdam iure ipsam sequi consectetur tempore doloribus delectus quaerat?
-								</p>
+						<div class="card">
+							<div class="card-inner">
+								<div class="service-icon">
+									<i class="fas fa-mobile-alt"></i>
+								</div>
+								<h4 class="py-2">Mobile First</h4>
+								<p class="py-2">All websites are designed and coded with a mobile-first approach, ensuring that your website is functional on a wide spectrum of screen sizes. </p>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4">
-						<div class="card" data-aos="fade-right">
-							<div class="card-inner px-4">
-								<img src="img/shopping-cart.png" height="80px" width=" 80px" alt="design" />
-								<h4 class="py-3">Ecommerce</h4>
-								<p>
-									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ratione corrupti
-									quibusdam iure ipsam sequi consectetur tempore doloribus delectus quaerat?
-								</p>
+						<div class="card">
+							<div class="card-inner">
+								<div class="service-icon">
+									<i class="fas fa-search fa-2x"></i>
+								</div>
+								<h4 class="py-2">SEO</h4>
+								<p class="py-2">In order to give your website a better ranking on google search to help improve your buisness growth. I can assist you with SEO Marketing</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-inner pt-4">
+								<div class="service-icon mt-4">
+									<i class="fas fa-file-code"></i>
+								</div>
+								<h4 class="pt-3">Web Dev</h4>
+								<p class="pt-3">Your website can be made from scratch! I am additionally able to assist in improving and resolving issues on your current site.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-inner">
+								<div class="service-icon">
+									<i class="fas fa-question"></i>
+								</div>
+								<h4 class="py-2">Web Consulting</h4>
+								<p class="py-2">If you have any queries regarding the development of a website, I am in a position to offer consulting services.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-inner">
+								<div class="service-icon">
+									<i class="fab fa-wordpress"></i>
+								</div>
+								<h4 class="py-2">Wordpress</h4>
+								<p class="py-2">I can transform your website into a WordPress theme, which will allow for easier in-house customisation and up-keep</p>
 							</div>
 						</div>
 					</div>
@@ -164,7 +207,7 @@
 			</div>
 		</section>
 
-		<section id="portfolio" class="pt-5 pb-5">
+		<section id="portfolio" class="py-5 blue-bg">
 			<h2 class="text-center text-white" data-aos="fade-up">Portfolio</h2>
 			<div class="container">
 				<div class="row">
@@ -181,14 +224,13 @@
 								<div class="col-lg-4 item html">
 									<div data-aos="fade-right" class="card">
 										<div class="card-head">
-											<img src="img/image.jpg" class="img-fluid card-img" />
+											<img src="img/rigz5.png" class="img-fluid card-img" />
 											<div class="card-overlay"></div>
 											<div class="card-hover">
-												<h3 class="mt-2">lorem Ipsum</h3>
-												<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+												<h4 class="mt-2">RigZ</h4>
+												<p>CMS Landing Page</p>
 												<div class="view">
-													<a href=""><i class="fab fa-github fa-2x"></i></a>
-													<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													<a target="_blank" href="https://affectionate-wing-d38b96.netlify.app/" class="btn text-white">View</a>
 												</div>
 											</div>
 										</div>
@@ -197,14 +239,13 @@
 								<div class="col-lg-4 item css">
 									<div data-aos="fade-right" class="card">
 										<div class="card-head">
-											<img src="img/image.jpg" class="img-fluid card-img" />
+											<img src="img/comp.png" class="img-fluid card-img" />
 											<div class="card-overlay"></div>
 											<div class="card-hover">
-												<h3 class="mt-2">lorem Ipsum</h3>
-												<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+												<h4 class="mt-2">CompRepr</h4>
+												<p>PC Repair Landing Page</p>
 												<div class="view">
-													<a href=""><i class="fab fa-github fa-2x"></i></a>
-													<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													<a target="_blank" href="https://jovial-morse-105686.netlify.app/" class="btn text-white">View</a>
 												</div>
 											</div>
 										</div>
@@ -213,14 +254,13 @@
 								<div class="col-lg-4 item javascript">
 									<div data-aos="fade-right" class="card">
 										<div class="card-head">
-											<img src="img/image.jpg" class="img-fluid card-img" />
+											<img src="img/urmstonauto.png" class="img-fluid card-img" />
 											<div class="card-overlay"></div>
 											<div class="card-hover">
-												<h3 class="mt-2">lorem Ipsum</h3>
-												<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+												<h4 class="mt-2">Urmston AutoCare</h4>
+												<p>Uni project 1</p>
 												<div class="view">
-													<a href=""><i class="fab fa-github fa-2x"></i></a>
-													<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													<a target="_blank" href="https://chrisjharvey.github.io./" class="btn text-white">View</a>
 												</div>
 											</div>
 										</div>
@@ -232,11 +272,10 @@
 											<img src="img/image.jpg" class="img-fluid card-img" />
 											<div class="card-overlay"></div>
 											<div class="card-hover">
-												<h3 class="mt-2">lorem Ipsum</h3>
-												<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+												<h4 class="mt-2">Coming Soon</h4>
+												<p>In Development</p>
 												<div class="view">
-													<a href=""><i class="fab fa-github fa-2x"></i></a>
-													<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													<a target="_blank" href="" class="btn text-white">View</a>
 												</div>
 											</div>
 										</div>
@@ -248,11 +287,10 @@
 											<img src="img/image.jpg" class="img-fluid card-img" />
 											<div class="card-overlay"></div>
 											<div class="card-hover">
-												<h3 class="mt-2">lorem Ipsum</h3>
-												<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+												<h4 class="mt-2">Coming Soon</h4>
+												<p>In Development</p>
 												<div class="view">
-													<a href=""><i class="fab fa-github fa-2x"></i></a>
-													<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													<a target="_blank" href="" class="btn text-white">View</a>
 												</div>
 											</div>
 										</div>
@@ -264,11 +302,10 @@
 											<img src="img/image.jpg" class="img-fluid card-img" />
 											<div class="card-overlay"></div>
 											<div class="card-hover">
-												<h3 class="mt-2">lorem Ipsum</h3>
-												<p class="mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+												<h4 class="mt-2">Coming Soon</h4>
+												<p>In Development</p>
 												<div class="view">
-													<a href=""><i class="fab fa-github fa-2x"></i></a>
-													<a href=""><i class="fas fa-globe fa-2x"></i></a>
+													<a target="_blank" href="" class="btn text-white">View</a>
 												</div>
 											</div>
 										</div>
@@ -281,94 +318,80 @@
 			</div>
 		</section>
 
-		<section id="testimonials1" class="py-5">
+		<!-- <section id="testimonials" class="text-center my-5 py-5">
 			<h2 class="text-center mt-5" data-aos="fade-up">What My Customers Think</h2>
-			<div class="container mt-5">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="testimonial-1 rounded my-3" data-aos="fade-right">
-							<i class="fas fa-quote-left fa-2x pb-3"></i>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
-							<div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/sKDeBrg.jpg" width="40">
-								<div class="ml-2 about"><span class="d-block name">Giralle Cross</span><span class="place">Operator Trade, Little AR, TX</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="testimonial-2 rounded my-3" data-aos="fade-right">
-							<i class="fas fa-quote-left fa-2x pb-3"></i>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
-							<div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/aZ9cakV.jpg" width="40">
-								<div class="ml-2 about"><span class="d-block name">Sam Cross</span><span class="place-2">Android Developer, Little AR, TX</span></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="testimonial-1 rounded my-3" data-aos="fade-right">
-							<i class="fas fa-quote-left fa-2x pb-3"></i>
-							<!-- <img class="mb-3" src="https://i.imgur.com/ECXzJ1k.png" width="40"> -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br><br></p>
-							<div class="d-flex flex-row align-items-center"><img class="rounded-circle" src="https://i.imgur.com/LP0U10y.jpg" width="40">
-								<div class="ml-2 about"><span class="d-block name">Marry Cross</span><span class="place">Operator Trade, Little AR, CA</span></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- <section id="testimonials" data-aos="fade-left" class="p-5 mb-5">
-			<h2 class="text-center mt-5" data-aos="fade-up">What My Customers Think</h2>
-			<div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
-				
-				<ul class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-					<li data-target="#myCarousel" data-slide-to="2"></li>
-				</ul>
-				
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
 				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="img-box"><img src="img/person2.png" alt="" /></div>
-						<p class="testimonial">
-							Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus
-							mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus,
-							volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.
-						</p>
-						<p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+				  <div class="carousel-item active">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="testimonial-img text-center ">
+									<img src="img/person1.png" height="100px" class="rounded-circle m-4" alt="">
+								</div>
+								<div class="test-caption text-dark">
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores reiciendis quibusdam temporibus mollitia! Sunt nihil pariatur maxime quam officiis rem!</p>
+								</div>
+								<div class="test-name green-highlight my-5">
+									<p>John Doe</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="carousel-item">
-						<div class="img-box"><img src="img/person3.png" alt="" /></div>
-						<p class="testimonial">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at,
-							luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum
-							idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.
-						</p>
-						<p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
+				  </div>
+				  <div class="carousel-item">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="testimonial-img text-center ">
+									<img src="img/person1.png" height="100px" class="rounded-circle m-4" alt="">
+								</div>
+								<div class="test-caption text-dark">
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores reiciendis quibusdam temporibus mollitia! Sunt nihil pariatur maxime quam officiis rem!</p>
+								</div>
+								<div class="test-name green-highlight my-5">
+									<p>John Doe</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="carousel-item">
-						<div class="img-box"><img src="img/person1.png" alt="" /></div>
-						<p class="testimonial">
-							Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit
-							tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis.
-							Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor
-							velit.
-						</p>
-						<p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
+				  </div>
+				  <div class="carousel-item">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="testimonial-img text-center ">
+									<img src="img/person1.png" height="100px" class="rounded-circle m-4" alt="">
+								</div>
+								<div class="test-caption text-dark">
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores reiciendis quibusdam temporibus mollitia! Sunt nihil pariatur maxime quam officiis rem!</p>
+								</div>
+								<div class="test-name green-highlight my-5">
+									<p>John Doe</p>
+								</div>
+							</div>
+						</div>
 					</div>
+				  </div>
 				</div>
-				
-				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-					<i class="fa fa-angle-left"></i>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Previous</span>
 				</a>
-				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
-					<i class="fa fa-angle-right"></i>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="sr-only">Next</span>
 				</a>
-			</div>
+			  </div>
 		</section> -->
 
 		<section id="blog" class="py-5 bg-light">
-			<h2 class="text-center pb-5" data-aos="fade-up">Blog</h2>
+			<h2 class="text-center green-highlight pb-5" data-aos="fade-up">Blog</h2>
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-lg-4">
@@ -377,11 +400,9 @@
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
 							<div class="card-body text-left">
-								<h4>Overlooking Security</h4>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, amet quasi</p>
-								<a href="blogpost.html" class="btn text-white"
-									>Read More <i class="fas fa-arrow-right"></i
-								></a>
+								<h4 class="my-3">Overlooking Security: Part 1</h4>
+								<a href="blogpost.html" class="btn text-white">Read More <i class="fas
+										fa-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -391,10 +412,11 @@
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
 							<div class="card-body text-left">
-								<h4>Overlooking Security</h4>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, amet quasi</p>
+								<h4 class="my-3">Overlooking Security: Part 2
+								</h4>
 								<div>
-									<a href="#" class="btn text-white">Read More <i class="fas fa-arrow-right"></i></a>
+									<a href="#" class="btn text-white">Read More <i class="fas
+											fa-arrow-right"></i></a>
 								</div>
 							</div>
 						</div>
@@ -405,9 +427,9 @@
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
 							<div class="card-body text-left">
-								<h4>Overlooking Security</h4>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, amet quasi</p>
-								<a href="#" class="btn text-white">Read More <i class="fas fa-arrow-right"></i></a>
+								<h4 class="my-3">WooCommerce vs Shopify</h4>
+								<a href="#" class="btn text-white">Read More <i class="fas
+										fa-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -421,61 +443,60 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="form-wrapper" data-aos="fade-right">
-						<form  class="needs-validation" netlify novalidate>
-							<div class="form-header">
-								
-								<h4 class="text-center py-3">Lets Work Together</h4>
-								<hr>
-								
-							</div>
-							<div class="form-group">
-								<input
-									type="text"
-									name="name"
-									placeholder="Name..."
-									class="form-control"
-									required
-								/>
-								<div class="invalid-feedback">Please enter a valid name</div>
-							</div>
+							<form class="needs-validation" netlify novalidate>
+								<div class="form-header">
 
-							<div class="form-group">
-								<input
-									type="email"
-									name="email"
-									placeholder="Email..."
-									class="form-control"
-									required
-								/>
-								<div class="invalid-feedback">Please enter a valid email address.</div>
-							</div>
+									<h4 class="text-center py-3">Lets Work Together</h4>
+									<hr>
 
-							<div class="form-group">
-								<input
-									type="text"
-									name="subject"
-									placeholder="Subject..."
-									class="form-control"
-									required
-								/>
-								<div class="invalid-feedback">Please enter a valid subject</div>
-							</div>
+								</div>
+								<div class="form-group">
+									<input
+										type="text"
+										name="name"
+										placeholder="Name..."
+										class="form-control"
+										required
+										/>
+									<div class="invalid-feedback">Please enter a valid name</div>
+								</div>
 
-							<div class="form-group">
-								<textarea
-									type="text"
-									name="message"
-									placeholder="Message..."
-									class="form-control"
-									required
-								></textarea>
-								<div class="invalid-feedback">Please enter a valid message</div>
+								<div class="form-group">
+									<input
+										type="email"
+										name="email"
+										placeholder="Email..."
+										class="form-control"
+										required
+										/>
+									<div class="invalid-feedback">Please enter a valid email address.</div>
+								</div>
+
+								<div class="form-group">
+									<input
+										type="text"
+										name="subject"
+										placeholder="Subject..."
+										class="form-control"
+										required
+										/>
+									<div class="invalid-feedback">Please enter a valid subject</div>
+								</div>
+
+								<div class="form-group">
+									<textarea
+										type="text"
+										name="message"
+										placeholder="Message..."
+										class="form-control"
+										required></textarea>
+									<div class="invalid-feedback">Please enter a valid message</div>
+								</div>
+								<div class="footer">
+
+									<button type="submit" class="btn btn-lg text-white btn-block">Submit</button>
+								</div>
 							</div>
-							<div class="footer">
-								
-								<button type="submit" class="btn btn-lg text-white btn-block">Submit</button>
-							</div>
-						</div>
 						</form>
 					</div>
 				</div>
@@ -509,7 +530,8 @@
 					</ul>
 				</div>
 				<div class="copy-text">
-					<h3 class="copy text-white" data-aos="fade-up">Copyright &copy; Chris Harvey 2020</h3>
+					<h3 class="copy text-white" data-aos="fade-up">Copyright &copy; Chris
+						Harvey 2020</h3>
 				</div>
 			</div>
 		</footer>
@@ -528,26 +550,27 @@
 			);
 		</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173403111-1"></script>
-<script>
+		<script async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-173403111-1"></script>
+		<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-173403111-1');
+  
 </script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
+			crossorigin="anonymous"></script>
 		<script
 			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-			crossorigin="anonymous"
-		></script>
+			crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 		<script src="js/main.js"></script>
