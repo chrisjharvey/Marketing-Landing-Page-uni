@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/blog.css" />
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-			crossorigin="anonymous"
-		/>
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/blog.css" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+            />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"
+            />
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-		<title>Front End React Developer: Chris Harvey</title>
-	</head>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+            />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+            />
+        <title>Web Design & Developer: Chris Harvey</title>
+    </head>
 
-	<body>
+    <body>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="index.html">Chris Harvey</a>
+                <a class="navbar-brand text-white" href="index.html">Chris
+                    Harvey</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -30,118 +35,177 @@
                     data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown"
                     aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+                    aria-label="Toggle navigation">
                     <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-					</ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
-            <section id="blogheader">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2>Blog</h2>
+        <section id="blogheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Blog</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blogpost">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="mt-5">Overlooking Security</h1>
+                        <p>By Chris Harvey</p>
+                        <hr>
+                        <p>Posted on 8th July 2020</p>
+                        <hr>
+                        <div class="blog-img">
+                            <img src="./img/Ecommerce-Security.jpg" alt=""
+                                class="blog-img mt-2 mb-4">
+                        </div>
+                        <div class="blog-main py-5">
+                            <p>When building an e-commerce website there are
+                                many factors that you have to consider in order
+                                to be successful. One factor that is vital to
+                                ensure that customers return and feel safe using
+                                your website, is security. Many people are aware
+                                of the potential risks when it comes to online
+                                shopping, and if a customer does not feel that
+                                the payment process is secure, they might
+                                abandon their shopping carts and look elsewhere.</p>
+                            <p>E-commerce security focuses on safe and secure
+                                electronic transactions and keeping all stored
+                                data protected against cyber-attacks, which can
+                                be sold on the dark web and used for identity
+                                theft. These attacks can seriously harm your
+                                online stores' reputation; therefore, it is
+                                vital to understand what the most common
+                                e-commerce security threats are, and how to
+                                prevent them from destroying your online
+                                business. </p>
+                            <p>Firstly, one of the most common threats to be
+                                aware of is Cross-Site Scripting (XSS) which
+                                involves an attacker inserting a malicious piece
+                                of code, usually in JavaScript, onto your
+                                website. The browser sees it as regular script
+                                and executes it. This script can give the hacker
+                                access to confidential data such as credit card
+                                information and exposes the victim to phishing
+                                attacks and malware installations. </p>
+                            <p>Secondly, SQL Injection’s, which can affect any
+                                site that uses an SQL database. The hacker can
+                                insert an SQL query into the database which
+                                would look like legitimate SQL. Once processed
+                                the hacker can gain access to the database, view
+                                sensitive information and even create an admin
+                                account so they can gain full access to the
+                                system via the backend. </p>
+                            <p>Another common threat is Malware, which is
+                                harmful software to a website, server and
+                                network and can take shape within the form of
+                                viruses, trojans and worms. Malware is used for
+                                controlling computers, forming a botnet as part
+                                of a DDoS attack to steal information and
+                                perform spam activities. </p>
+                            <p>To prevent attacks and data breaches on your
+                                website, there are a few security measures your
+                                website should follow. Using ready to use
+                                payment platforms that are secure and well
+                                known, like PayPal or Stripe. Using these
+                                platforms will give the customer a choice of
+                                multiple methods and they can choose whichever
+                                makes them feel more secure. </p>
+                            <p>Additionally, you should make sure your website
+                                is set up with an SSL certificate, and it is
+                                running over HTTPS. An SSL certificate ensures
+                                that your website is encrypted, and all user
+                                data is secure from hackers if intercepted
+                                through the internet. If you do not have an SSL
+                                installed, the browsers will warn users that the
+                                website is not secure, and it can also affect
+                                SEO Rankings. </p>
+                            <p>Many other factors should be addressed to keep
+                                your website secure, failing to do so will
+                                impact your business and customers data. </p>
+
+                            <!-- <div class="comment-section mt-4 mb-4">
+                                <div class="comment-header">
+                                    <h5 class="header">Leave a Comment:</h5>
+                                </div>
+                                <div class="comment-body">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <textarea name="comment"
+                                                id="blog-comment" rows="3"
+                                                class="form-control"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn
+                                            text-white">Submit</button>
+                                    </form>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="blogpost">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1 class="mt-5">Overlooking Security</h1>
-                            <p>By Chris Harvey</p>
-                            <hr>
-                            <p>Posted on 8th July 2020</p>
-                            <hr>
-                            <div class="blog-img ">
-                                <img src="./img/Ecommerce-Security.jpg" alt="" class="blog-img mt-2 mb-4">
-                            </div>
-                            <div class="blog-main">
-                                <p>When building an e-commerce website there are many factors that you have to consider in order to be successful. One factor that is vital to ensure that customers return and feel safe using your website, is security. Many people are aware of the potential risks when it comes to online shopping, and if a customer does not feel that the payment process is secure, they might abandon their shopping carts and look elsewhere.</p>
-                                <p>E-commerce security focuses on safe and secure electronic transactions and keeping all stored data protected against cyber-attacks, which can be sold on the dark web and used for identity theft. These attacks can seriously harm your online stores' reputation; therefore, it is vital to understand what the most common e-commerce security threats are, and how to prevent them from destroying your online business. </p>
-                                <p>Firstly, one of the most common threats to be aware of is Cross-Site Scripting (XSS) which involves an attacker inserting a malicious piece of code, usually in JavaScript, onto your website. The browser sees it as regular script and executes it. This script can give the hacker access to confidential data such as credit card information and exposes the victim to phishing attacks and malware installations. </p>
-                                <p>Secondly, SQL Injection’s, which can affect any site that uses an SQL database. The hacker can insert an SQL query into the database which would look like legitimate SQL. Once processed the hacker can gain access to the database, view sensitive information and even create an admin account so they can gain full access to the system via the backend. </p>
-                                <p>Another common threat is Malware, which is harmful software to a website, server and network and can take shape within the form of viruses, trojans and worms. Malware is used for controlling computers, forming a botnet as part of a DDoS attack to steal information and perform spam activities. </p>
-                                <p>To prevent attacks and data breaches on your website, there are a few security measures your website should follow. Using ready to use payment platforms that are secure and well known, like PayPal or Stripe. Using these platforms will give the customer a choice of multiple methods and they can choose whichever makes them feel more secure. </p>
-                                <p>Additionally, you should make sure your website is set up with an SSL certificate, and it is running over HTTPS. An SSL certificate ensures that your website is encrypted, and all user data is secure from hackers if intercepted through the internet. If you do not have an SSL installed, the browsers will warn users that the website is not secure, and it can also affect SEO Rankings. </p>
-                                <p>Many other factors should be addressed to keep your website secure, failing to do so will impact your business and customers data. </p>
-                            <div class="comment-section mt-4 mb-4">
-                            <div class="comment-header">
-                                <h5 class="header">Leave a Comment:</h5>
-                            </div>
-                            <div class="comment-body">
-                                <form action="">
-                                    <div class="form-group">
-                                        <textarea name="comment" id="blog-comment" rows="3" class="form-control"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn text-white">Submit</button>
-                                </form>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-           <footer>
-				<div class="footer-inner">
-					<div class="socials">
-						<ul class="social-list">
-							<li>
-							  <a href="">
-								<i class="fab fa-facebook-f"></i>
-							  </a>
-							</li>
-							<li>
-							  <a href="">
-								<i class="fab fa-twitter"></i>
-							  </a>
-							</li>
-							<li>
-							  <a href="">
-								<i class="fab fa-instagram"></i>
-							  </a>
-							</li>
-							<li>
-							  <a href="">
+        <footer>
+            <div class="footer-inner">
+                <div class="socials">
+                    <ul class="social-list" data-aos="fade-left">
+						
+						<li>
+							<a target="_blank" href="https://github.com/chrisjharvey">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+						
+						<li>
+							<a target="_blank" href="https://www.linkedin.com/in/chris-harvey-47820b166/">
 								<i class="fab fa-linkedin"></i>
-							  </a>
-							</li>
-						  </ul>
-						  </div>
-					   <div class="copy-text">
-					<h3 class="copy text-white">Copyright &copy; Chris Harvey 2020</h3> 
-				</div>
-			</footer> 
-		
+							</a>
+						</li>
+					</ul>
+                </div>
+                <div class="copy-text">
+                    <h3 class="copy text-white">Copyright &copy; Chris Harvey
+                        2020</h3>
+                </div>
+            </footer>
 
-		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/1ed1ca371c7921da29244b033/3dd48e7265d4eed33d78077cc.js");</script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-			crossorigin="anonymous"
-		></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-		<script src="js/main.js"></script>
-		<script src="js/validation.js"></script>
-	</body>
-</html>
+            <script async
+                src="https://www.googletagmanager.com/gtag/js?id=UA-173403111-1">
+		    </script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-173403111-1');
+            </script>
+            <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/1ed1ca371c7921da29244b033/3dd48e7265d4eed33d78077cc.js");</script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script
+                src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/validation.js"></script>
+        </body>
+    </html>
