@@ -1,23 +1,23 @@
 (function () {
 	'use strict';
 
-	var $projects = $('.projects');
+	// var $projects = $('.projects');
 
-	$projects.isotope({
-		itemSelector: '.item',
-		layoutMode: 'masonry',
-	});
+	// $projects.isotope({
+	// 	itemSelector: '.item',
+	// 	layoutMode: 'masonry',
+	// });
 
-	$('ul.filters > li').on('click', function (e) {
-		e.preventDefault();
+	// $('ul.filters > li').on('click', function (e) {
+	// 	e.preventDefault();
 
-		var filter = $(this).attr('data-filter');
+	// 	var filter = $(this).attr('data-filter');
 
-		$('ul.filters > li').removeClass('active');
-		$(this).addClass('active');
+	// 	$('ul.filters > li').removeClass('active');
+	// 	$(this).addClass('active');
 
-		$projects.isotope({ filter: filter });
-	});
+	// 	$projects.isotope({ filter: filter });
+	// });
 
 	$('.card')
 		.mouseenter(function () {
