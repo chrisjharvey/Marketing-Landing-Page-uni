@@ -33,11 +33,7 @@ body {
 	color: #11c149;
 }
 
-.about-btn{
-	display: flex;
-	justify-content: space-evenly;
-	align-items: left;
-}
+
 
 .btn {
 	background: #11c149 !important;
@@ -461,11 +457,7 @@ textarea {
 footer {
 	height: 400px;
 	display: flex;
-	background-image: radial-gradient(
-		circle farthest-corner at 10% 20%,
-		rgba(59, 149, 237, 1) 0%,
-		rgba(7, 91, 173, 1) 90%
-	);
+	background: #333;
 }
 
 .footer-inner {
@@ -490,9 +482,9 @@ footer {
 }
 
 .social-list li a {
-	background: #333;
+	background: #fff;
 	border-radius: 50%;
-	color: #fff;
+	color: #333;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
