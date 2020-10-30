@@ -33,8 +33,21 @@ body {
 	color: #11c149;
 }
 
+.about-btn{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: left;
+}
+
 .btn {
 	background: #11c149 !important;
+	color: #fff;
+	border-radius: 15px !important;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.522);
+	font-weight: 500 !important;
+}
+ .secondary{
+	background: #333 !important;
 	color: #fff;
 	border-radius: 15px !important;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.522);
