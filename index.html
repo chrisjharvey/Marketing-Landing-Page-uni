@@ -5,19 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Chris Harvey">
     <!-- description -->
-    	<meta name="description" content="I'm a Freelance Web Developer in London. I work with small businesses to help them
-		establish a professional online presence.">
+    	<meta name="description" content="I'm a Frontend Web Developer based in London where I am attending SAE Institute, studying a BSc (Hons) Web Development. ">
     <!-- keywords -->
     	<meta name="keywords" content="website for small business, web developer, web designer, wordpress theme development, responsive website design, bootstrap 4, web developer london, web developer uk, web design uk, web design london">
 
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/blog.css" />
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-			crossorigin="anonymous"
-			/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -29,7 +23,7 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-lg fixed-top" id ="#nav">
+		 <nav class="navbar navbar-expand-lg fixed-top" id ="#nav">
 			<div class="container-fluid">
 				<a class="navbar-brand text-white" href="#">Chris Harvey</a>
 				<button
@@ -42,7 +36,7 @@
 					aria-label="Toggle navigation">
 					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<div class="collapse  navbar-collapse justify-content-center" id="navbarNavDropdown">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
 							<a class="nav-link scroll" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -58,24 +52,25 @@
 						</li>
 					</ul>
 				</div>
+				
 			</div>
-		</nav>
-
+		</nav> 
+		
 		
 			<div class="wrapper" id="home">
 				<div class="showcase-text">
 					<div class="animate__animated animate__slideInLeft showcase-slide">
-					<h1>Chris Harvey</h1>
+					<h1 class='display-3'>Chris Harvey</h1>
 					<h3 class="ml-1">Student Web Developer</h3>
-					<a href="#portfolio" class="btn text-white btn-lg mt-3 ml-1 scroll">Portfolio</a>
+					<a href="#portfolio" class="btn btn-lg mt-3 ml-1 scroll">Portfolio</a>
 				</div>
 			</div>
 		
 
 			<div class="main-img animate__animated animate__bounce d-none d-sm-none
-				d-md-none d-lg-block">
-				<img src="img/code.svg" alt="hero-img" class="hero-img" height="700px"
-					width="650px" />
+			d-md-none d-lg-block">
+				<img src="img/code.svg" alt="hero-img" class="hero-img img-fluid" height="700px"
+					width="600px" />
 			</div>
 			<div class="arrow-btn">
 				<a href="#about" class="scroll"><i class="fas fa-angle-down arrow animate__animated
@@ -83,229 +78,133 @@
 			</div>
 		</div>
 
-		<section id="about" class="mt-5 pt-5">
+		
+
+
+		<section class="about my-5" id="about">
 			<div class="container">
-				<h2 class="text-center">About Me</h2>
-				<div class="row mb-5">
-					<div class="col-md-6" data-aos="fade-right">
-						<img
-							src="img/about.svg"
-							width="500px"
-							height="400px"
-							alt=""
-							class="about-img d-none d-sm-none d-md-none d-lg-block"
-							/>
-					</div>
-					<div class="col-lg-6 p-5 about-text" data-aos="fade-left">
-						<h3>Web Designer & Developer based in London</h3>
-						<p>
-							My name is Christopher Harvey, I am from Manchester, UK, and currently living in London where I am attending SAE Institute, studying a BSc (Hons) Web Development. My journey in Web Development began through self-teaching where I used programmes such as Udemy, FreeCodeCamp and Codeacademy in order to assist my learning. Through this, I built my portfolio and was then accepted at SAE Institute. As a student, I now focus my time and effort into building a career in Full Stack Web Development.
-						</p>
-						
-						<div class="about-buttons">
-							<a href="#portfolio" class="btn btn-lg text-white scroll about-btn mr-2">View
-								My Work</a>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-		<!-- <section id="services" class="py-5 bg-light">
-			<div class="container">
-				<div class="services-text">
-					<h2 class="pb-3 green-highlight">Services</h2>
-					<p class="pb-3">
-						I aim to make a website that you can be proud of, a website that looks
-						great on all screen sizes, is user friendly and fast.
-					</p>
-				</div>
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="card" data-aos="fade-left">
-							<div class="card-inner">
-							    <div class="service-icon">
-									<i class="fa fa-paint-brush "></i>
-								</div>
-								<h4 class="py-2">Web Design</h4> 
-								<p class="py-2">Starting with wireframes and mock-ups. All aspects of the design process will be checked to ensure it’s nothing short of perfection before development.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card" data-aos="fade-left">
-							<div class="card-inner">
-								<div class="service-icon">
-									<i class="fas fa-mobile-alt"></i>
-								</div>
-								<h4 class="py-2">Mobile First</h4>
-								<p class="py-2">All websites are designed and coded with a mobile-first approach, ensuring that your website is functional on a wide spectrum of screen sizes. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card" data-aos="fade-left">
-							<div class="card-inner">
-								<div class="service-icon">
-									<i class="fas fa-search fa-2x"></i>
-								</div>
-								<h4 class="py-2">SEO</h4>
-								<p class="py-2">In order to give your website a better ranking on google search to help improve your buisness growth. I can assist you with SEO Marketing</p>
-							</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-6 col-md-8">
+						<div class="text-center mb-5">
+							<h2 class="highlight header-colorize text-uppercase mb-3">About Me</h2>
+							
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="card" data-aos="fade-left">
-							<div class="card-inner pt-4">
-								<div class="service-icon mt-4">
-									<i class="fas fa-file-code"></i>
-								</div>
-								<h4 class="pt-3">Web Dev</h4>
-								<p class="pt-3">Your website can be made from scratch! I am additionally able to assist in improving and resolving issues on your current site.</p>
-							</div>
-						</div>
+				<div class="row align-items-center">
+					<div class="col-lg-5" data-aos="fade-right">
+						<img src="img/me.png" alt="" class="img-fluid shadow-lg mx-auto d-block">
 					</div>
-					<div class="col-lg-4">
-						<div class="card" data-aos="fade-left">
-							<div class="card-inner">
-								<div class="service-icon">
-									<i class="fas fa-question"></i>
-								</div>
-								<h4 class="py-2">Web Consulting</h4>
-								<p class="py-2">If you have any queries regarding the development of a website, I am in a position to offer consulting services.</p>
+					<div class="col-lg-6 offset-lg-1">
+						<div class="text-sub mt-5 mt-lg-0" data-aos="fade-left">
+							<h3 class="mb-4">Web Developer based in London</h3>
+							<p class="mb-4">My name is Christopher Harvey, I am from Manchester, UK, and currently living in London where I am attending SAE Institute, studying a BSc (Hons) Web Development. My journey in Web Development began through self-teaching where I used programmes such as Udemy, FreeCodeCamp and Codeacademy in order to assist my learning. Through this, I built my portfolio and was then accepted at SAE Institute. As a student, I now focus my time and effort into building a career in Full Stack Web Development.</p>
+							
+							<div class="d-flex flex-wrap align-items-center">
+								<a href="#portfolio" class="btn text-white scroll about-btn mb-2 mr-2">View
+									My Work</a>
+								<a target="_blank" href="ChrisCV.pdf" class="secondary-btn text-white scroll about-btn mb-2 mr-2">Download CV</a>
+									
 							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card" data-aos="fade-left">
-							<div class="card-inner">
-								<div class="service-icon">
-									<i class="fab fa-wordpress"></i>
-								</div>
-								<h4 class="py-2">Wordpress</h4>
-								<p class="py-2">I can transform your website into a WordPress theme, which will allow for easier in-house customisation and up-keep</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
-
-		<section id="portfolio" class="py-5 blue-bg">
-			<h2 class="text-center text-white my-5">Portfolio</h2>
-			<div class="container">
-				<!-- <div class="row">
-					<div class="col-lg-12">
-						<ul class="filters text-center" data-aos="fade-right">
-							<li class="active" data-filter="*"><a href="#!">All</a></li>
-							<li data-filter=".html"><a href="#!">HTML</a></li>
-							<li data-filter=".css"><a href="#!">CSS</a></li>
-							<li data-filter=".javascript"><a href="#!">JavaScript</a></li>
-						</ul> -->
-
-						<div class="projects pb-5">
-							<div class="row">
-								<div class="col-lg-4 item html">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="img/rigz5.png" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h4 class="mt-2">RigZ</h4>
-												<p>CMS Landing Page</p>
-												<div class="view">
-													<a target="_blank" href="https://affectionate-wing-d38b96.netlify.app/" class="btn text-white">View</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 item css">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="img/comp.png" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h4 class="mt-2">CompRepr</h4>
-												<p>PC Repair Landing Page</p>
-												<div class="view">
-													<a target="_blank" href="https://jovial-morse-105686.netlify.app/" class="btn text-white">View</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 item javascript">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="img/urmstonauto.png" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h4 class="mt-2">Urmston AutoCare</h4>
-												<p>Uni project 1</p>
-												<div class="view">
-													<a target="_blank" href="https://chrisjharvey.github.io./" class="btn text-white">View</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 item html">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="img/huddle.png" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h4 class="mt-2">Huddle</h4>
-												<p>Frontend Mentor project</p>
-												<div class="view">
-													<a target="_blank" href="https://hopeful-perlman-d8d0a7.netlify.app/" class="btn text-white">View</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 item css">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="img/ping.png" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h4 class="mt-2">Ping</h4>
-												<p>Front End Mentor</p>
-												<div class="view">
-													<a target="_blank" href="https://optimistic-yonath-7dca2f.netlify.app/" class="btn text-white">View</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 item javascript">
-									<div data-aos="fade-right" class="card">
-										<div class="card-head">
-											<img src="img/Natours.png" class="img-fluid card-img" />
-											<div class="card-overlay"></div>
-											<div class="card-hover">
-												<h4 class="mt-2">Natours</h4>
-												<p>Advanced Sass & CSS course</p>
-												<div class="view">
-													<a target="_blank" href="https://blissful-beaver-e6e88c.netlify.app/" class="btn text-white">View</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		
+
+		<!--  Portfolio Section -->
+		<section id="portfolio" class='py-5'>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6 col-md-8">
+						<div class="text-center mb-5">
+							<h2 class="highlight header-colorize text-uppercase pt-5 mt-5">Portfolio</h2>
+							
+						</div>
+					</div>
+				</div>
+				<div class="row d-flex justify-content-between align-items-center py-5">
+					<div class="col-lg-6" data-aos="fade-right">
+						<img src="img/huddle.png" alt="" class="img-fluid mx-auto rounded shadow d-block">
+					</div>
+					<div class="col-lg-6" data-aos="fade-left">
+						<div class="text-sub mt-5 mt-lg-0">
+							<h3 class="mb-4">Huddle Landing Page</h3>
+							<p class="mb-4">A Front End Mentor Project built with HTML and CSS. A professional design, the idea was to get it at as close as possible to the design.</p>
+							
+							<div class="d-flex flex-wrap align-items-center" data-aos="fade-left">
+								<a target="_blank" href="https://hopeful-perlman-d8d0a7.netlify.app/" class="btn text-white mb-2 mr-2"><i class="fa fa-eye"></i> Live Preview </a>
+								<a target="_blank" href="https://github.com/chrisjharvey/huddle-landing-page-with-alternating-feature-blocks-master" class="secondary-btn text-white mb-2 mr-2"> <i class="fab fa-github"></i> View Source</a>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center my-5 flex-row-reverse">
+					<div class="col-lg-6" data-aos="fade-right">
+						<img src="img/rigz1.png" alt="" class="img-fluid shadow-lg rounded mx-auto d-block">
+					</div>
+					<div class="col-lg-6" data-aos="fade-left">
+						<div class="text-sub mt-5 mt-lg-0">
+							<h3 class="mb-4">Rigz</h3>
+							<p class="mb-4">A Landing page for a custom CMS i made for university. Built using HTML, CSS, JavaScript and Bootstrap</p>
+							
+							<div class="d-flex flex-wrap align-items-center" data-aos="fade-left">
+								<a target="_blank" href="https://affectionate-wing-d38b96.netlify.app/" class="btn text-white mb-2 mr-2"> <i class="fa fa-eye"></i> Live Preview</a>
+								<a target="_blank" href="https://github.com/chrisjharvey/RIgZ" class="secondary-btn text-white mb-2 mr-2"> <i class="fab fa-github"></i> View Source</a>
+									
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="row d-flex justify-content-between align-items-center py-5">
+					<div class="col-lg-6" data-aos="fade-right">
+						<img src="img/whagwanfilm.png" alt="" class="img-fluid mx-auto rounded shadow d-block">
+					</div>
+					<div class="col-lg-6" data-aos="fade-left">
+						<div class="text-sub mt-5 mt-lg-0">
+							<h3 class="mb-4">Whagwan Film Festival Landing Page</h3>
+							<p class="mb-4">A Landing page for the Whagwan Film Festival built HTML, CSS, Sass, JavaScript and Bootstrap</p>
+							
+							<div class="d-flex flex-wrap align-items-center" data-aos="fade-left">
+								<a target="_blank" href="https://whagwan.netlify.app/" class="btn text-white mb-2 mr-2"><i class="fa fa-eye"></i> Live Preview </a>
+								<a target="_blank" href="https://github.com/chrisjharvey/wagwanlanding" class="secondary-btn text-white mb-2 mr-2"> <i class="fab fa-github"></i> View Source</a>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center my-5 flex-row-reverse">
+					<div class="col-lg-6" data-aos="fade-right">
+						<img src="img/urmstonauto.png" alt="" class="img-fluid shadow-lg rounded mx-auto d-block">
+					</div>
+					<div class="col-lg-6" data-aos="fade-left">
+						<div class="text-sub mt-5 mt-lg-0">
+							<h3 class="mb-4">Urmston AutoCare</h3>
+							<p class="mb-4">My first project at University. A Multi Page Car Maintenance website built with HTML, CSS, JavaScript</p>
+							
+							<div class="d-flex flex-wrap align-items-center" data-aos="fade-left">
+								<a target="_blank" href="https://reverent-haibt-b4f90b.netlify.app/" class="btn d-md-block text-white mb-2 mr-2"> <i class="fa fa-eye"></i> Live Preview</a>
+								<a target="_blank" href="https://github.com/chrisjharvey/chrisjharvey.github.io" class="secondary-btn text-white mb-2 mr-2"> <i class="fab fa-github"></i> View Source</a>
+									
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- <div class="row justify-content-center">
+					<div class="col-lg-6 col-md-8">
+						<div class="text-center">
+							<a href="portfolio.html" class="btn text-white my-5 about-btn mr-2">View
+								More <i class="fa fa-arrow-right"></i></a>
+							
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</section>
 
 		<!-- <section id="testimonials" class="text-center my-5 py-5">
 			<h2 class="text-center mt-5" data-aos="fade-up">What My Customers Think</h2>
@@ -379,55 +278,52 @@
 			  </div>
 		</section> -->
 
-		<!-- <section id="blog" class="py-5 bg-light">
-			<h2 class="text-center green-highlight pb-5">Blog</h2>
+		  <!-- <section id="blog" class="py-5 bg-light">
+			<h2 class="text-center text-uppercase py-5">Blog</h2>
 			<div class="container text-center">
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="card" data-aos="fade-left">
-							<div class="card-img">
+							<div class="card-img p-2">
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
 							<div class="card-body text-left">
-								<h4 class="my-3">Overlooking Security: Part 1</h4>
-								<a href="blogpost.html" class="btn text-white">Read More <i class="fas
-										fa-arrow-right"></i></a>
+								<h5 class="mb-3">Overlooking Security: Part 1</h5>
+								<a href="blogs.html" class="btn text-white">Read More</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="card disabled" data-aos="fade-left">
-							<div class="card-img">
+							<div class="card-img p-2">
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
 							<div class="card-body text-left">
-								<h4 class="my-3">Overlooking Security: Part 2
-								</h4>
+								<h5 class="mb-3">Overlooking Security: Part 2
+								</h5>
 								<div>
-									<a href="#" class="btn disabled text-white">Read More <i class="fas
-											fa-arrow-right"></i></a>
+									<a href="#" class="btn disabled text-white">Read More</a>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 pb-5">
 						<div class="card disabled" data-aos="fade-left">
-							<div class="card-img">
+							<div class="card-img p-2">
 								<img src="img/Ecommerce-Security.jpg" alt="" class="ecomm" />
 							</div>
 							<div class="card-body text-left">
-								<h4 class="my-3">WooCommerce vs Shopify</h4>
-								<a href="#" class="btn disabled text-white">Read More <i class="fas
-										fa-arrow-right"></i></a>
+								<h5 class="mb-3">WooCommerce vs Shopify</h5>
+								<a href="#" class="btn disabled text-white">Read More</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section> -->
+		</section>  -->
 
-		<section id="contact" class="mb-5">
-			<h3 class="text-center py-5">Contact Me</h3>
+		<section id="contact" class="py-5 my-3">
+			<h3 class="text-center text-uppercase pb-5">Contact Me</h3>
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -481,7 +377,7 @@
 										required></textarea>
 									<div class="invalid-feedback">Please enter a valid message</div>
 								</div>
-								<div class="footer">
+								<div>
 
 									<button type="submit" class="btn btn-lg text-white btn-block">Submit</button>
 								</div>
@@ -493,6 +389,9 @@
 		</section>
 
 		<footer>
+				<!-- <div class="totopbtn">
+					<span class="fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i></span>
+				</div> -->
 			<div class="footer-inner">
 				<div class="socials">
 					<ul class="social-list" data-aos="fade-left">

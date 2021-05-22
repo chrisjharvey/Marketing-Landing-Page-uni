@@ -1,24 +1,25 @@
 #blogheader {
-	height: 40vh;
-	color: #fff;
-	background-image: radial-gradient(
-		circle farthest-corner at 10% 20%,
-		rgba(59, 149, 237, 1) 0%,
-		rgba(7, 91, 173, 1) 90%
-	);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  height: 40vh;
+  color: #fff;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(59, 149, 237, 1) 0%,
+    rgba(7, 91, 173, 1) 90%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(50% 0%, 100% 0, 100% 94%, 0 100%, 0 0);
 }
 
 .blog-card-img .blog {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .blog-img {
-    text-align: center;
+  text-align: center;
 }
 
 .blog-main p {
-	font-size: 20px;
+  font-size: 20px;
 }
