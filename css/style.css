@@ -31,6 +31,14 @@ body {
   padding: 10px 25px !important;
 }
 
+h2,
+h3 {
+  font-weight: 700 !important;
+}
+
+p {
+}
+
 .btn:hover {
   background: rgba(17, 193, 73, 0.872) !important;
   color: #fff;
@@ -88,7 +96,7 @@ button:focus:not(:focus-visible) {
 .navbar-nav .active > .nav-link,
 .nav-item .nav-link:hover {
   color: #11c149 !important;
-  font-weight: 500;
+  font-weight: 600;
 }
 .navbar {
   padding: 0.7rem 3rem;
@@ -102,6 +110,7 @@ button:focus:not(:focus-visible) {
 .navbar-brand {
   margin-left: 1rem;
   font-size: 1.2rem !important;
+  font-weight: 600;
 }
 
 .navbar.solid .navbar-brand {
@@ -117,6 +126,7 @@ button:focus:not(:focus-visible) {
 }
 .navbar-nav .nav-link {
   color: #fff;
+  font-weight: 600;
 }
 
 .custom-toggler-icon {
@@ -166,6 +176,12 @@ button:focus:not(:focus-visible) {
 .wrapper h1 {
   font-size: 4rem;
   text-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+}
+.wrapper h3 {
+  /* font-size: 4rem; */
+  text-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  font-weight: 600;
 }
 .arrow-btn {
   position: absolute;
